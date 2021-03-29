@@ -846,7 +846,7 @@ static void att_conn_callback(int fd, uint32_t events, void *user_data)
 	}
 
 	if (verbose) {
-		bt_att_set_debug(server->att, att_debug_cb, "att: ", NULL);
+		bt_att_set_debug(server->att, BT_ATT_DEBUG, att_debug_cb, "att: ", NULL);
 		bt_gatt_server_set_debug(server->gatt, gatt_debug_cb, "srv: ", NULL);
 	}
 
